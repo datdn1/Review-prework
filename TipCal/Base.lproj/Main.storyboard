@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Iey-rC-xWI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tip CalCulator-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TipCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2kM-fs-xMu">
+                                <rect key="frame" x="16" y="79" width="288" height="64"/>
+                                <color key="backgroundColor" red="0.90259747232997911" green="0.94586127996444702" blue="0.91571100136237038" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.30311918900000001" green="0.94586128000000003" blue="0.80428108070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="60"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="billChangeHandler:" destination="vXZ-lx-hvc" eventType="editingChanged" id="4OG-QQ-AqK"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="le9-7m-5Ct">
+                                <rect key="frame" x="16" y="201" width="288" height="144"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3b-Id-XVH">
+                                        <rect key="frame" x="71" y="8" width="209" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="9y3-eo-Qog"/>
+                                            <constraint firstAttribute="width" constant="209" id="b3E-Nb-Qe7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="32"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTI-cQ-dHq">
+                                        <rect key="frame" x="0.0" y="59" width="280" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="C1a-ZX-Sh7"/>
+                                            <constraint firstAttribute="height" constant="77" id="GIX-kJ-cnw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="55"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omf-vp-f9t">
+                                        <rect key="frame" x="8" y="13" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbq-5K-B6p">
+                                        <rect key="frame" x="8" y="87" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84328939904792966" green="1" blue="0.77207407750468038" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Q3b-Id-XVH" firstAttribute="top" secondItem="le9-7m-5Ct" secondAttribute="top" constant="8" id="B41-2J-SBf"/>
+                                    <constraint firstAttribute="bottom" secondItem="tTI-cQ-dHq" secondAttribute="bottom" constant="8" id="YFt-NO-yeJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="tTI-cQ-dHq" secondAttribute="trailing" constant="8" id="hWk-dG-f7c"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q3b-Id-XVH" secondAttribute="trailing" constant="8" id="uWJ-PR-Kql"/>
+                                    <constraint firstAttribute="height" constant="144" id="w6x-cT-7yf"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G17-bR-a2e">
+                                <rect key="frame" x="16" y="151" width="288" height="29"/>
+                                <segments>
+                                    <segment title="10%"/>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tipChangeHandler:" destination="vXZ-lx-hvc" eventType="valueChanged" id="fXN-W2-F7f"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="2kM-fs-xMu" secondAttribute="centerX" id="CEH-Rc-kSj"/>
+                            <constraint firstItem="G17-bR-a2e" firstAttribute="top" secondItem="2kM-fs-xMu" secondAttribute="bottom" constant="8" id="LtR-sv-05z"/>
+                            <constraint firstItem="2kM-fs-xMu" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Mnq-r5-Wwm"/>
+                            <constraint firstAttribute="centerX" secondItem="le9-7m-5Ct" secondAttribute="centerX" id="Ok7-xe-Ey1"/>
+                            <constraint firstItem="le9-7m-5Ct" firstAttribute="top" secondItem="G17-bR-a2e" secondAttribute="bottom" constant="22" id="R8z-e9-aDl"/>
+                            <constraint firstItem="G17-bR-a2e" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XhX-as-TQG"/>
+                            <constraint firstItem="G17-bR-a2e" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="bMY-U3-dxR"/>
+                            <constraint firstItem="2kM-fs-xMu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="bz7-1p-Nwk"/>
+                            <constraint firstItem="le9-7m-5Ct" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cX6-7V-ogg"/>
+                            <constraint firstItem="2kM-fs-xMu" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="15" id="hgY-Fx-dON"/>
+                            <constraint firstItem="le9-7m-5Ct" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="jNn-zl-h7J"/>
+                            <constraint firstAttribute="centerX" secondItem="G17-bR-a2e" secondAttribute="centerX" id="sPE-Rp-tRg"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NnT-bv-vhX" appends="YES" id="qmg-Os-EFa"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tip CalCulator" id="eRU-Sn-ZOC">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="compose" id="hX9-mt-Ll2">
+                            <connections>
+                                <segue destination="xiT-lL-Lz7" kind="push" id="W5L-0H-zYE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="amountLabel" destination="tTI-cQ-dHq" id="Vws-Zl-NGx"/>
+                        <outlet property="amountView" destination="le9-7m-5Ct" id="s94-bD-L0Z"/>
+                        <outlet property="billTextField" destination="2kM-fs-xMu" id="nuW-JE-XVW"/>
+                        <outlet property="tipAmountLabel" destination="Q3b-Id-XVH" id="t5C-pt-mIk"/>
+                        <outlet property="tipSegment" destination="G17-bR-a2e" id="c5a-QY-jLq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NnT-bv-vhX">
+                    <connections>
+                        <action selector="hideKeyBoardHandler:" destination="vXZ-lx-hvc" id="i5s-Ud-vzE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="515" y="241"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="3Gf-gu-fdD">
+            <objects>
+                <viewController id="xiT-lL-Lz7" customClass="SettingViewController" customModule="TipCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Cv-KM-R5K"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vwv-mS-4uI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hh2-Xz-spP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZE5-EJ-x5d">
+                                <rect key="frame" x="187" y="104" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.94586127996444702" green="0.73934617094409738" blue="0.58845731269230384" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
+                                <state key="normal" title="15%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedTipHandler:" destination="xiT-lL-Lz7" eventType="touchUpInside" id="0TG-bG-d5R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgW-ax-SOi">
+                                <rect key="frame" x="26" y="229" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.94586127996444702" green="0.64204176622103082" blue="0.82840155193115217" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
+                                <state key="normal" title="18%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedTipHandler:" destination="xiT-lL-Lz7" eventType="touchUpInside" id="TPj-YM-wDM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Htk-Vx-Ctv">
+                                <rect key="frame" x="187" y="229" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.94586127996444702" green="0.25131725120948745" blue="0.33364038049898603" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
+                                <state key="normal" title="20%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedTipHandler:" destination="xiT-lL-Lz7" eventType="touchUpInside" id="Y3a-ub-gvW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKT-BQ-JW0">
+                                <rect key="frame" x="26" y="104" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.30311918901196361" green="0.94586127996444702" blue="0.80428108070646298" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
+                                <state key="normal" title="10%">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectedTipHandler:" destination="xiT-lL-Lz7" eventType="touchUpInside" id="u6b-Gb-aJt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="ykp-IU-J8D"/>
+                    <connections>
+                        <outlet property="eighteenTipButton" destination="MgW-ax-SOi" id="btx-To-GpX"/>
+                        <outlet property="fifteenTipButton" destination="ZE5-EJ-x5d" id="7Fr-Eo-eqR"/>
+                        <outlet property="tenTipButton" destination="HKT-BQ-JW0" id="YHP-NS-pm4"/>
+                        <outlet property="tweltyTipButton" destination="Htk-Vx-Ctv" id="2LZ-xB-hiO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hz7-hE-8F9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="241"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4ei-AL-l3i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iey-rC-xWI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NAv-SM-4C0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="A5W-MT-HOf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24h-RH-TuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="241"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
